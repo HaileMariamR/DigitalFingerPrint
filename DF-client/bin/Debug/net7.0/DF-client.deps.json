@@ -1,0 +1,93 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "DF-client/1.0.0": {
+        "dependencies": {
+          "Wangkanai.Detection": "7.0.0"
+        },
+        "runtime": {
+          "DF-client.dll": {}
+        }
+      },
+      "JetBrains.Annotations/2022.3.1": {
+        "runtime": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "assemblyVersion": "4242.42.42.42",
+            "fileVersion": "2022.3.1.0"
+          }
+        }
+      },
+      "Wangkanai.Detection/7.0.0": {
+        "dependencies": {
+          "Wangkanai.Hosting": "0.7.0",
+          "Wangkanai.System": "1.11.1"
+        },
+        "runtime": {
+          "lib/net7.0/Wangkanai.Detection.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        }
+      },
+      "Wangkanai.Hosting/0.7.0": {
+        "runtime": {
+          "lib/net7.0/Wangkanai.Hosting.dll": {
+            "assemblyVersion": "0.7.0.0",
+            "fileVersion": "0.7.0.0"
+          }
+        }
+      },
+      "Wangkanai.System/1.11.1": {
+        "dependencies": {
+          "JetBrains.Annotations": "2022.3.1"
+        },
+        "runtime": {
+          "lib/net7.0/Wangkanai.System.dll": {
+            "assemblyVersion": "1.11.1.0",
+            "fileVersion": "1.11.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DF-client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JetBrains.Annotations/2022.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw==",
+      "path": "jetbrains.annotations/2022.3.1",
+      "hashPath": "jetbrains.annotations.2022.3.1.nupkg.sha512"
+    },
+    "Wangkanai.Detection/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QRh5I29CgUe14rL6Nw6FUJpVUf90M/mB10htA/mZYuAQWBsnO5lahh9WCcAnBuNaUWj9i5Z6uWG9TJRc2cX3vw==",
+      "path": "wangkanai.detection/7.0.0",
+      "hashPath": "wangkanai.detection.7.0.0.nupkg.sha512"
+    },
+    "Wangkanai.Hosting/0.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qi7yEvjzfKyY8pRecRsSGWJBNGjpJukhoVyfv3giaiQ4g4Ia8oonTZK6/uUKd6CFeyzgME90i6UgA0BJ4ns3lA==",
+      "path": "wangkanai.hosting/0.7.0",
+      "hashPath": "wangkanai.hosting.0.7.0.nupkg.sha512"
+    },
+    "Wangkanai.System/1.11.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MDWbkuQmG2br2uKp3LP1XItZgyZYR10rWo4wuzfuncmribrwEVwS36sR+Aq9oszbktn9dln2oci/bnojJEoePw==",
+      "path": "wangkanai.system/1.11.1",
+      "hashPath": "wangkanai.system.1.11.1.nupkg.sha512"
+    }
+  }
+}

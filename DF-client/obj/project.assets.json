@@ -1,0 +1,218 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "JetBrains.Annotations/2022.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Wangkanai.Detection/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Wangkanai.Hosting": "0.7.0",
+          "Wangkanai.System": "1.11.1"
+        },
+        "compile": {
+          "lib/net7.0/Wangkanai.Detection.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Wangkanai.Detection.dll": {
+            "related": ".pdb"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Wangkanai.Hosting/0.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Wangkanai.Hosting.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Wangkanai.Hosting.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Wangkanai.System/1.11.1": {
+        "type": "package",
+        "dependencies": {
+          "JetBrains.Annotations": "2022.3.1"
+        },
+        "compile": {
+          "lib/net7.0/Wangkanai.System.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Wangkanai.System.dll": {
+            "related": ".pdb"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JetBrains.Annotations/2022.3.1": {
+      "sha512": "11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw==",
+      "type": "package",
+      "path": "jetbrains.annotations/2022.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "jetbrains.annotations.2022.3.1.nupkg.sha512",
+        "jetbrains.annotations.nuspec",
+        "lib/net20/JetBrains.Annotations.dll",
+        "lib/net20/JetBrains.Annotations.xml",
+        "lib/netstandard1.0/JetBrains.Annotations.deps.json",
+        "lib/netstandard1.0/JetBrains.Annotations.dll",
+        "lib/netstandard1.0/JetBrains.Annotations.xml",
+        "lib/netstandard2.0/JetBrains.Annotations.deps.json",
+        "lib/netstandard2.0/JetBrains.Annotations.dll",
+        "lib/netstandard2.0/JetBrains.Annotations.xml",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.dll",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.xml"
+      ]
+    },
+    "Wangkanai.Detection/7.0.0": {
+      "sha512": "QRh5I29CgUe14rL6Nw6FUJpVUf90M/mB10htA/mZYuAQWBsnO5lahh9WCcAnBuNaUWj9i5Z6uWG9TJRc2cX3vw==",
+      "type": "package",
+      "path": "wangkanai.detection/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NUGET.md",
+        "README.md",
+        "lib/net6.0/Wangkanai.Detection.dll",
+        "lib/net6.0/Wangkanai.Detection.pdb",
+        "lib/net7.0/Wangkanai.Detection.dll",
+        "lib/net7.0/Wangkanai.Detection.pdb",
+        "wangkanai-logo.png",
+        "wangkanai.detection.7.0.0.nupkg.sha512",
+        "wangkanai.detection.nuspec"
+      ]
+    },
+    "Wangkanai.Hosting/0.7.0": {
+      "sha512": "qi7yEvjzfKyY8pRecRsSGWJBNGjpJukhoVyfv3giaiQ4g4Ia8oonTZK6/uUKd6CFeyzgME90i6UgA0BJ4ns3lA==",
+      "type": "package",
+      "path": "wangkanai.hosting/0.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Wangkanai.Hosting.dll",
+        "lib/net7.0/Wangkanai.Hosting.dll",
+        "lib/netcoreapp3.1/Wangkanai.Hosting.dll",
+        "wangkanai-logo.png",
+        "wangkanai.hosting.0.7.0.nupkg.sha512",
+        "wangkanai.hosting.nuspec"
+      ]
+    },
+    "Wangkanai.System/1.11.1": {
+      "sha512": "MDWbkuQmG2br2uKp3LP1XItZgyZYR10rWo4wuzfuncmribrwEVwS36sR+Aq9oszbktn9dln2oci/bnojJEoePw==",
+      "type": "package",
+      "path": "wangkanai.system/1.11.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Wangkanai.System.dll",
+        "lib/net6.0/Wangkanai.System.pdb",
+        "lib/net7.0/Wangkanai.System.dll",
+        "lib/net7.0/Wangkanai.System.pdb",
+        "lib/netstandard2.1/Wangkanai.System.dll",
+        "lib/netstandard2.1/Wangkanai.System.pdb",
+        "wangkanai-logo.png",
+        "wangkanai.system.1.11.1.nupkg.sha512",
+        "wangkanai.system.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Wangkanai.Detection >= 7.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\hp\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\hp\\source\\repos\\DF-Solution\\DF-client\\DF-client.csproj",
+      "projectName": "DF-client",
+      "projectPath": "C:\\Users\\hp\\source\\repos\\DF-Solution\\DF-client\\DF-client.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hp\\source\\repos\\DF-Solution\\DF-client\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.telerik.com/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "Wangkanai.Detection": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

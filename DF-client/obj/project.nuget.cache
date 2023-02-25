@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "vGJyfhPspIYt6H416w5TIFAB/SQ+0rdu4daZ1y3L1xoFK2FYzwLZw2DBLAmXYXlRmbPU+PXib5J34a4kYB7tdA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hp\\source\\repos\\DF-Solution\\DF-client\\DF-client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\wangkanai.detection\\7.0.0\\wangkanai.detection.7.0.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\wangkanai.hosting\\0.7.0\\wangkanai.hosting.0.7.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\wangkanai.system\\1.11.1\\wangkanai.system.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}

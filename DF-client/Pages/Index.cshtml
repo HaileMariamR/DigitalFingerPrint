@@ -1,0 +1,121 @@
+﻿@page
+@model IndexModel
+@inject Wangkanai.Detection.Services.IDetectionService DetectionService
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="text-center" style="height:500px">
+    <div>
+        <button class="btn-primary" onclick="CaptureInfo()" style=" border-radius:10px; height:50px; width:100px ; margin:20px ;">Capture</button>
+        <div id="caputuredInfo" style="width:300px;">
+        </div>
+        <button class="btn-primary" onclick="sentToAPI(
+                        '@DetectionService.Device.Type',
+                        '@DetectionService.Browser.Name',
+                        '@DetectionService.Platform.Name',
+                        '@DetectionService.Engine.Name' ,
+                        '@DetectionService.Crawler.Name',
+                        '@DetectionService.UserAgent',
+                        '@Model.RemoteIpAddress',
+                        '@Model.OriginUrl')" style="border-radius:10px; height:50px; width:100px ; margin-top:40px">
+            sent to api
+        </button>
+    </div>
+</div>
+
+<script>
+
+    // test function 
+
+    const AlertName = (name) =>{
+        alert(`fresh start ${name}`)
+    }
+
+    // digital fingerprint payload
+
+    const dfPayload = {
+
+        "visitorId": "",
+        "components": "",
+        "confidence": "",
+        "version": ""
+
+    }
+
+    // meta data payload 
+
+    const metadataPayload = {
+        "deviceType": "",
+        "browserName": "",
+        "engineName": "",
+        "crawlerName": "",
+        "userAgent": "",
+        "remoteIpAddress": "",
+        "originUrl": ""
+    }
+
+    // a funtion that detect browser information.
+
+    const CaptureInfo = () => {
+        const fpPromise = import('https://openfpcdn.io/fingerprintjs/v3')
+            .then(FingerprintJS => FingerprintJS.load())
+        fpPromise
+            .then(fp => fp.get())
+            .then(result => {
+
+                // display information.
+
+                var getinfoDiv = document.getElementById('caputuredInfo');
+                getinfoDiv.innerHTML =JSON.stringify(result);
+
+                // Assign digital fingeprint payload.
+                
+                dfPayload.components = result.components;
+                dfPayload.confidence = result.confidence;
+                dfPayload.visitorId = result.visitorId;
+                dfPayload.version = result.version;
+
+            })
+    }
+
+
+    //  funtion that sent a request to server 
+
+
+    const sentToAPI = (deviceType, browserName, engineName, crawlerName, userAgent, remoteIpAddress, originUrl) => {
+
+        // assign metadata payload
+         metadataPayload .deviceType  = deviceType,
+         metadataPayload.browserName =  browserName,
+         metadataPayload.engineName = engineName,
+         metadataPayload.crawlerName = crawlerName,
+         metadataPayload.userAgent = userAgent,
+         metadataPayload.remoteIpAddress = remoteIpAddress,
+         metadataPayload.originUrl = originUrl
+        
+        // create request bayload 
+        let requestPayload = {
+            "DFmodel" : dfPayload,
+            "Metadata" : metadataPayload
+        }
+
+        // request ajax post request 
+        $.ajax({
+            data : JSON.stringify(requestPayload),
+            type: "POST",
+            url: "http://localhost:5182/DF",
+            dataType: "json",
+            contentType: "application/json",
+            success: function (result) {
+                console.log(result)
+            },
+            error : function (result) {
+                console.log(result)
+            }
+        });
+    }
+
+   
+</script>

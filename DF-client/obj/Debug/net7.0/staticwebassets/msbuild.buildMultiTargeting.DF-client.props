@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DF-client.props" />
+</Project>
